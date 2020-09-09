@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tablayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff">
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/firstItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Персонаж" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/secondItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Умения" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/thirditem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Сумка" />
+
+    </com.google.android.material.tabs.TabLayout>
+
+
+
+    <androidx.viewpager.widget.ViewPager xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".character.profile.MyProfileFragment">
+
+
+
+    </androidx.viewpager.widget.ViewPager>
+</LinearLayout>

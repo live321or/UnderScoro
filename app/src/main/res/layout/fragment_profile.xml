@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/profile"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?android:attr/selectableItemBackground"
+    android:orientation="vertical"
+
+    tools:context=".World">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="00dp">
+
+        <Button
+            android:id="@+id/pGroup"
+            android:layout_width="30dp"
+            android:layout_height="32dp"
+            android:layout_marginTop="2.5dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/pFriend"
+            android:background="@drawable/ic_group_add"
+            android:focusable="false" />
+
+        <Button
+            android:id="@+id/pFriend"
+            android:layout_width="25dp"
+            android:layout_height="26dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/pMes"
+            android:background="@drawable/ic_friend"
+            android:focusable="false" />
+
+        <Button
+            android:id="@+id/pMes"
+            android:layout_width="25dp"
+            android:layout_height="26dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/ic_message"
+            android:focusable="false" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingTop="0dp"
+        android:paddingRight="20dp">
+
+        <TextView
+            android:id="@+id/name_Player"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="monospace"
+            android:textAlignment="center"
+            android:textSize="35sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/lvl_Player"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="monospace"
+            android:textAlignment="viewStart"
+            android:textSize="25sp" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/list_Profile_Stat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" />
+
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:layout_marginStart="5dp"
+    android:layout_marginTop="5dp"
+    android:background="@color/cardview_light_background">
+
+    <ImageView
+        android:id="@+id/gIconL"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginRight="5dp"
+        android:src="@drawable/ic_face_black" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/gLider"
+        android:layout_toRightOf="@+id/gIconL"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/nLHero"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textColor="#000"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/hpLHero"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hp" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/gLider"
+        android:layout_width="25dp"
+        android:layout_height="26dp"
+        android:layout_toLeftOf="@+id/gMesL"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/ic_lider"
+        android:focusable="false" />
+
+    <Button
+        android:id="@+id/gMesL"
+        android:layout_width="25dp"
+        android:layout_height="26dp"
+        android:layout_toLeftOf="@+id/gKikL"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/ic_message"
+        android:focusable="false" />
+
+    <Button
+        android:id="@+id/gKikL"
+        android:layout_width="25dp"
+        android:layout_height="26dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/ic_kik"
+        android:focusable="false" />
+</RelativeLayout>

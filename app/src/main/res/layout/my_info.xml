@@ -1,0 +1,114 @@
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/l_My_1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+
+    android:background="?android:attr/selectableItemBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        android:padding="20dp"
+        >
+
+    <TextView
+        android:id="@+id/get_My_Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="monospace"
+        android:text="getName"
+        android:textAlignment="center"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_marginLeft="70dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:id="@+id/onWeapon"
+            android:src="@drawable/ic_colorize_gray"
+            android:layout_weight="1"/>
+        <ImageView
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="70dp"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:id="@+id/onSheld"
+            android:src="@drawable/ic_security_gray"
+            android:layout_weight="1"/>
+<!--        <ImageView-->
+<!--            android:layout_width="70dp"-->
+<!--            android:layout_height="70dp"-->
+<!--            android:id="@+id/onBody"-->
+<!--            android:src="@drawable/ic_launcher_background"-->
+<!--            android:layout_weight="1"/>-->
+<!--        <ImageView-->
+<!--            android:layout_width="70dp"-->
+<!--            android:layout_height="70dp"-->
+<!--            android:id="@+id/onHead"-->
+<!--            android:src="@drawable/ic_launcher_background"-->
+<!--            android:layout_weight="1"/>-->
+<!--        <ImageView-->
+<!--            android:layout_width="70dp"-->
+<!--            android:layout_height="70dp"-->
+<!--            android:id="@+id/onLeg"-->
+<!--            android:src="@drawable/ic_launcher_background"-->
+<!--            android:layout_weight="1"/>-->
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/get_My_Lvl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="monospace"
+        android:text="getLvl"
+        android:textAlignment="viewStart"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/get_My_EXP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="monospace"
+        android:text="getEXP"
+        android:textAlignment="viewStart"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/get_My_Point"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:fontFamily="monospace"
+        android:text="getPoint"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/list_My_Stat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/b_My_Apply"
+        android:text="Применить"
+        android:layout_gravity="end"/>
+</LinearLayout></LinearLayout>

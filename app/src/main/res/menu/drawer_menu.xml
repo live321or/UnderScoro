@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="Группа 1">
+        <menu>
+            <item
+                android:id="@+id/myProfileItem"
+                android:title="Профиль" />
+            <item
+                android:id="@+id/myGroup"
+                android:title="Группа" />
+            <item
+                android:id="@+id/myFriend"
+                android:title="Друзья" />
+            <item
+                android:id="@+id/locationItem"
+                android:title="Локация" />
+
+        </menu>
+    </item>
+    <item android:title="Группа 2">
+        <menu>
+            <item
+                android:id="@+id/exit"
+                android:title="Выход" />
+
+
+        </menu>
+    </item>
+</menu>

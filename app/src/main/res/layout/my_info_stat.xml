@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp">
+    <TextView
+        android:id="@+id/nameMyStat"
+        android:layout_alignParentLeft="true"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="3"
+        android:fontFamily="monospace"
+        android:text="nStr"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/resultMyStat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="10dp"
+        android:layout_toLeftOf="@id/costStat"
+        android:fontFamily="monospace"
+        android:text="getStr"
+        android:textAlignment="viewEnd"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/costStat"
+        android:layout_width="15dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_toLeftOf="@id/mMStat"
+        android:text="1"
+        android:textAlignment="viewEnd" />
+
+
+    <Button
+        android:id="@+id/mMStat"
+        android:layout_toLeftOf="@id/pMStat"
+        android:layout_centerInParent="true"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="top"
+        android:padding="0dp"
+        android:text="-"/>
+
+    <Button
+        android:id="@+id/pMStat"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="top"
+        android:layout_marginRight="10dp"
+        android:padding="0dp"
+        android:text="+"/>
+</RelativeLayout>
